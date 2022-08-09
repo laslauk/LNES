@@ -10,4 +10,3 @@
 [submodule "LNES_Tests"]
 	path = LNES_Tests
 	url = git@github.com:laslauk/LNES_Tests.git
-git status
