@@ -5,6 +5,8 @@
 */
 
 #include <iostream>
+#include "../LNES_EMU_HW/Include/bus.hh"
+#include "../LNES_EMU_HW/Include/memory.hh"
 
 int main() {
 

@@ -1,1 +1,16 @@
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCbB6LVIQT0KjqaNBHyHIezl0xia4HEAlcbCFl0ujBYrEPOvghMx6CxNuKaMbYzHedrQtkf50e7JMuJh8l9nf6mQBeUWVyaEGWhK9Apoc9rE1C4p+BIB+ax58EqRPTwM0aMzdqWQ+V5uhdZJwsbSEJEmg7Wj72ngH3n57f40AGlAJ2F2fYgVH/dyx3GDezNVySRvdLJySJ40LVoJNxl2SMSa71MWdeZpXq2os536nzXXEGpHTwVTKepOD/WLilLG5RLDHVzrOSjrtPuAX7qGCnxb87FSZtqs9O3RXrWDdG5FG+RBr+WkMADc6deB6WUvRDsj81zzCPCUSAHBT5G2OifIucTCOcT7qHAJSiLPf+ker9NV7CkMV0WXWPn6j3Fugy+qMxhf6CZlv+C9w3U28g+0KchtbRzR4cX+gDnVhHkD5XiP+PfzZPp18x/HNPgI9KchEtAF/9iKYggScHglTYeOnSWnuQL1VmWJokmU1puzEMZyTQdzOFHb09fJPhWJ1U= larpatin@ubuntu
+CC = g++ -std=c++14
+ODIR = ./build
+IDIR += ./LNES_EMU_HW/Include
+OBJ_ = $(wildcard $(ODIR)/*.o)
+
+all: main
+	$(CC) $(OBJ_) -o program.a
+
+main:
+	$(CC) -c ./app/main.cpp -o ./$(ODIR)/main.o -I$(IDIR)
+
+
+.PHONY: clean
+clean: 
+	rm ./build/*
+	rm program.exe
