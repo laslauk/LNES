@@ -1,0 +1,13 @@
+[submodule "LNES_EMU_HW"]
+	path = LNES_EMU_HW
+	url = git@github.com:laslauk/LNES_EMU_HW.git
+[submodule "LNES_CORE"]
+	path = LNES_CORE
+	url = git@github.com:laslauk/LNES_CORE.git
+[submodule "LNES_Graphics"]
+	path = LNES_Graphics
+	url = git@github.com:laslauk/LNES_Graphics.git
+[submodule "LNES_Tests"]
+	path = LNES_Tests
+	url = git@github.com:laslauk/LNES_Tests.git
+git status
